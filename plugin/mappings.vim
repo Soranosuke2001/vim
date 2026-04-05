@@ -49,3 +49,8 @@ inoremap <expr> ' getline('.')[col('.') - 1] == "'" ? "\<Right>" : "''<Left>"
 
 # Search word under cursor (current project)
 nnoremap <leader>fW <cmd>grep! "\b<cword>\b"<cr><cmd>copen<cr>
+
+# Highlights
+nnoremap <C-h> :echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
+inoremap <C-h> <C-o>:echo synIDattr(synID(line("."), col("."), 1), "name")<CR>
+

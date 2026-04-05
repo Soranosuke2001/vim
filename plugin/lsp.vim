@@ -1,6 +1,13 @@
 vim9script
 
+g:lsp_settings = {
+\ 'pylsp': {'disabled': v:true},
+\ 'pyright': {'cmd': ['pyright-langserver', '--stdio']}
+\}
+
 # Strict Diagnostics (Virtual Text Only)
+g:lsp_diagnostics_echo_delay = 50
+g:lsp_diagnostics_float_delay = 50
 g:lsp_diagnostics_enabled = 1
 g:lsp_diagnostics_virtual_text_enabled = 1
 g:lsp_diagnostics_virtual_text_prefix = "   ❯ "

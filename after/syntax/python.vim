@@ -7,7 +7,7 @@ g:python_highlight_builtin_objs = 1
 g:python_highlight_builtin_types = 1
 g:python_highlight_builtin_funcs = 1
 g:python_highlight_operators = 1
-g:python_highlight_space_errors = 1
+g:python_highlight_space_errors = 0
 g:python_highlight_string_formatting = 1
 g:python_highlight_string_format = 1
 g:python_highlight_string_templates = 1
@@ -74,6 +74,7 @@ g:Hi("pythonTripleQuotes",  light_brown,  "NONE", "italic")
 
 g:Hi("pythonNumber",        dark_orange,  "NONE", "NONE")
 g:Hi("pythonEscape",        dark_orange,  "NONE", "NONE")
+g:Hi("pythonSpaceError",    "NONE",       "NONE", "NONE")
 
 g:Hi("pythonBuiltin",       dark_blue,    "NONE", "NONE")
 g:Hi("pythonClass",         dark_blue,    "NONE", "bold")

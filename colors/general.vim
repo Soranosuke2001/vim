@@ -71,3 +71,4 @@ g:Hi("StatusGit",      g:fg_main,   g:darker_blue, "italic")
 g:Hi("StatusFile",     g:fg_main,   g:darker_blue, "NONE")
 g:Hi("StatusModified", g:orange,    g:darker_blue, "bold")
 g:Hi("StatusPos",      g:fg_second, g:blue,        "NONE")
+

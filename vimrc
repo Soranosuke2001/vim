@@ -19,6 +19,7 @@ set mouse=a
 set clipboard=unnamed
 set timeoutlen=1000
 set ttimeoutlen=10
+set updatetime=100
 
 # --- Appearance & UI ---
 set termguicolors
@@ -67,10 +68,9 @@ set foldnestmax=10
 set nofoldenable
 
 # --- Autocomplete & LSP ---
-set omnifunc=syntaxcomplete#Complete
+# set omnifunc=syntaxcomplete#Complete
 set completeopt=menu,menuone,noselect,popup
 set pumheight=10
-set completeopt+=popup
 
 # --- Load External Configs ---
 var current_dir = expand('<sfile>:p:h')

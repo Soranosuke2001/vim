@@ -1,16 +1,16 @@
 vim9script
 
+# Load init folder
+runtime! init/*.vim
+
+# Plugins
 g:plug_home = expand('~/.vim/plugged')
 plug#begin(g:plug_home)
   Plug 'prabirshrestha/vim-lsp'
   Plug 'mattn/vim-lsp-settings'
   Plug 'prabirshrestha/asyncomplete.vim'
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
-  Plug 'airblade/vim-gitgutter'
 plug#end()
-
-g:lsp_diagnostics_enabled = 1
-g:lsp_preview_float = 1
 
 # Set colorscheme
 colorscheme ptheme
@@ -117,8 +117,4 @@ set omnifunc=syntaxcomplete#Complete
 set completeopt=menu,menuone,noselect,popup
 set pumheight=10
 set completeopt+=popup
-
-
-# -- Git diff --
-# set diffopt=internal,filler,closeoff,indent-heuristic,algorithm:histogram
 

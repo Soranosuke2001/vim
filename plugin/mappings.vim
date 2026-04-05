@@ -35,5 +35,17 @@ nnoremap <leader>bl <cmd>ls<cr>:b
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
+# Auto pairs
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+
+inoremap <expr> ) getline('.')[col('.') - 1] == ')' ? "\<Right>" : ")"
+inoremap <expr> ] getline('.')[col('.') - 1] == ']' ? "\<Right>" : "]"
+inoremap <expr> } getline('.')[col('.') - 1] == '}' ? "\<Right>" : "}"
+
+inoremap <expr> " getline('.')[col('.') - 1] == '"' ? "\<Right>" : '""<Left>'
+inoremap <expr> ' getline('.')[col('.') - 1] == "'" ? "\<Right>" : "''<Left>"
+
 # Search word under cursor (current project)
 nnoremap <leader>fW <cmd>grep! "\b<cword>\b"<cr><cmd>copen<cr>

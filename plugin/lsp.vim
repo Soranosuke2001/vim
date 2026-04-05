@@ -14,10 +14,10 @@ g:lsp_diagnostics_highlights_enabled = 1
 
 # Signs
 g:lsp_document_code_action_signs_enabled = 0
-g:lsp_diagnostics_signs_error = {'text': 'e'}
-g:lsp_diagnostics_signs_warning = {'text': 'w'}
-g:lsp_diagnostics_signs_information = {'text': 'i'}
-g:lsp_diagnostics_signs_hint = {'text': '?'}
+g:lsp_diagnostics_signs_error = {'text': '▏e'}
+g:lsp_diagnostics_signs_warning = {'text': '▏w'}
+g:lsp_diagnostics_signs_information = {'text': '▏i'}
+g:lsp_diagnostics_signs_hint = {'text': '▏?'}
 
 # Previews
 g:lsp_preview_autoclose = 1

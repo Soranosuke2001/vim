@@ -11,6 +11,7 @@ plug#end()
 
 # --- General System Settings ---
 set nocompatible
+filetype on
 filetype plugin indent on
 syntax on
 set encoding=utf-8
@@ -73,5 +74,7 @@ set completeopt+=popup
 
 # --- Load External Configs ---
 var current_dir = expand('<sfile>:p:h')
-execute 'source ' .. current_dir .. '/colors/palette.vim'
-execute 'source ' .. current_dir .. '/colors/general.vim'
+g:palette_dir = 'source ' .. current_dir .. '/colors/palette.vim'
+g:general_dir = 'source ' .. current_dir .. '/colors/general.vim'
+execute g:palette_dir
+execute g:general_dir

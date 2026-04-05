@@ -7,9 +7,9 @@ def g:Hi(group: string, fg: string, bg: string = "NONE", gui: string = "NONE")
 enddef
 
 # --- Git Signs ---
-sign define GitAdd    text=+ texthl=GitAdd
-sign define GitChange text=~ texthl=GitChange
-sign define GitDelete text=- texthl=GitDelete
+sign define GitAdd    text=▏+ texthl=GitAdd
+sign define GitChange text=▏~ texthl=GitChange
+sign define GitDelete text=▏- texthl=GitDelete
 
 
 # --- Pagers ---

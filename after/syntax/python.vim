@@ -88,3 +88,5 @@ g:Hi("pythonConditional",   purple,       "NONE", "NONE")
 g:Hi("pythonRepeat",        purple,       "NONE", "NONE")
 g:Hi("pythonException",     purple,       "NONE", "bold")
 g:Hi("pythonExceptions",    dark_blue,    "NONE", "NONE")
+
+execute g:general_dir

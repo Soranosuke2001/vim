@@ -1,2 +1,10 @@
-.netrwhist
+# macos files
 .DS_Store
+
+# vim files
+.netrwhist
+swap
+undo
+backup
+plugged
+autoload

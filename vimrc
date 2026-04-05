@@ -1,6 +1,6 @@
 vim9script
 
-# Plugins
+# --- Plugins ---
 g:plug_home = expand('~/.vim/plugged')
 plug#begin(g:plug_home)
   Plug 'prabirshrestha/vim-lsp'
@@ -9,111 +9,69 @@ plug#begin(g:plug_home)
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
 plug#end()
 
-# Load configs
-var current_dir = expand('<sfile>:p:h')
-execute 'source ' .. current_dir .. '/colors/palette.vim'
-execute 'source ' .. current_dir .. '/colors/general.vim'
-
-# Enable true color
-set termguicolors
-set background=dark
-
-# -- General Settings --
+# --- General System Settings ---
 set nocompatible
 filetype plugin indent on
 syntax on
 set encoding=utf-8
-
-# Mouse mode
-set mouse=r
-
-# Enable sign columns
-set signcolumn=yes
-
-# Key timeout
+set mouse=a
+set clipboard=unnamed
 set timeoutlen=1000
 set ttimeoutlen=10
 
-# No wrap
-set nowrap
-
-# Clipboard sync
-set clipboard=unnamed
-
-# Shows line numbers
+# --- Appearance & UI ---
+set termguicolors
+set background=dark
 set number
 set relativenumber
-
-# Show the status line
+set signcolumn=yes
 set laststatus=2
-
-# Shows mode
 set noshowmode
 set shortmess+=c
-
-# Cursorline
-set nocursorcolumn
+set scrolloff=8
+set nowrap
 g:netrw_cursor = 0
 
-# Display command line completion
-set wildmenu
-set wildmode=longest:full,full
-
-set wildignorecase
-set suffixes+=.info,.swp,.bak,.log
-
-# Writing backups
-set backup
-set writebackup
-
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
-
-# Save undo history to file
-set undofile
-set undodir=~/.vim/undo//
-
-# 8 lines above and below cursor
-set scrolloff=8
-
-
-# -- Searching --
+# --- Search ---
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-
-# Ignore specific files
+set path+=**
+set wildmenu
+set wildmode=longest:full,full
+set wildignorecase
 set wildignore+=*.class,*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 set wildignore+=node_modules/**,target/**,build/**,bin/**,.venv/**,venv/**
+set suffixes+=.info,.swp,.bak,.log
 
-
-
-# -- File Management --
-# Search subdirectories recursively
-set path+=**
-
-
-# -- Indentation --
+# --- Formatting & Indentation ---
 set expandtab
 set shiftwidth=4
 set tabstop=4
 set autoindent
 
+# --- Files, Backups & Undo ---
+set backup
+set writebackup
+set undofile
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
 
-# -- Folding -- 
+# --- Folding --- 
 set foldmethod=indent
 set foldlevelstart=99
 set foldnestmax=10
 set nofoldenable
 
-
-# -- Autocomplete --
-# Enable omni-completion (lsp replacement)
+# --- Autocomplete & LSP ---
 set omnifunc=syntaxcomplete#Complete
-
-# Pop-up menu settings
 set completeopt=menu,menuone,noselect,popup
 set pumheight=10
 set completeopt+=popup
 
+# --- Load External Configs ---
+var current_dir = expand('<sfile>:p:h')
+execute 'source ' .. current_dir .. '/colors/palette.vim'
+execute 'source ' .. current_dir .. '/colors/general.vim'

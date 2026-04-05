@@ -37,4 +37,3 @@ vnoremap K :m '<-2<CR>gv=gv
 
 # Search word under cursor (current project)
 nnoremap <leader>fW <cmd>grep! "\b<cword>\b"<cr><cmd>copen<cr>
-

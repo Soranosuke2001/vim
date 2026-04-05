@@ -3,6 +3,7 @@ vim9script
 # Variables
 g:bg_main             = "#0e0e0e"
 g:fg_main             = "#CCCCCC"
+g:fg_sub              = "#949494"
 g:fg_second           = "#1a1b26"
 
 g:blue                = "#7aa2f7"

@@ -63,7 +63,6 @@ g:Hi("LspHintVirtualText",        light_grey, "NONE", "NONE")
 
 # --- Python Syntax Highlights ---
 g:Hi("Normal",              g:fg_main,    "NONE", "NONE")
-g:Hi("Comment",             brown,        "NONE", "italic")
 g:Hi("pythonComment",       grey,         "NONE", "italic")
 g:Hi("pythonTodo",          orange,       "NONE", "bold,italic")
 

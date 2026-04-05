@@ -11,6 +11,7 @@ sign define GitAdd    text=+ texthl=GitAdd
 sign define GitChange text=~ texthl=GitChange
 sign define GitDelete text=- texthl=GitDelete
 
+
 # --- Pagers ---
 g:Hi("Title",    g:fg_main, "NONE", "bold")
 g:Hi("MoreMsg",  g:grey,    "NONE", "NONE")
@@ -21,7 +22,16 @@ g:Hi("Normal",  g:fg_main, g:bg_main, "NONE")
 g:Hi("Conceal", g:blue,    "NONE",    "NONE")
 
 # --- netrw ---
-g:Hi("Directory", g:blue, "NONE", "NONE")
+g:Hi("Directory",      g:blue,   "NONE", "NONE")
+g:Hi("Comment",        g:fg_sub, "NONE", "NONE")
+g:Hi("netrwVersion",   g:fg_sub, "NONE", "NONE")
+g:Hi("netrwComment",   g:fg_sub, "NONE", "NONE")
+g:Hi("netrwCmdNote",   g:fg_sub, "NONE", "NONE")
+g:Hi("netrwQuickHelp", g:fg_sub, "NONE", "NONE")
+g:Hi("netrwCmdSep",    g:fg_sub, "NONE", "NONE")
+g:Hi("netrwHelpCmd",   g:fg_sub, "NONE", "NONE")
+g:Hi("netrwList",      g:fg_sub, "NONE", "NONE")
+g:Hi("netrwClassify",  g:blue,   "NONE", "NONE")
 
 # --- Code ---
 g:Hi("Visual",      "NONE",      g:steel_grey,   "NONE")

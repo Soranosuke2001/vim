@@ -45,9 +45,12 @@ var blueish_grey        = "#292e42"
 var dark_blue           = "#1f2335"
 var purple              = "#bb9af7"
 var orange              = "#FF9C2B"
+var yellow              = "#ffca2b"
+var light_red           = "#fe4343"
 var red                 = "#FF0000"
 var brown               = "#854422"
 var green               = "#67BF6D"
+var light_grey          = "#5C6370"
 var grey                = "#565f89"
 var steel_grey          = "#3B3A3A"
 
@@ -189,5 +192,20 @@ Hi("PmenuSbar", "NONE", "#262626")
 Hi("PmenuThumb", "NONE", fg_main)
 
 
-#
+# LSP Signs
+Hi("LspErrorText", light_red)
+Hi("LspWarningText", orange)
+Hi("LspInformationText", light_grey)
+Hi("LspHintText", light_grey)
 
+# LSP Inline Highlights
+Hi("LspErrorHighlight", "NONE", "NONE", "undercurl")
+Hi("LspWarningHighlight", "NONE", "NONE", "undercurl")
+Hi("LspInformationHighlight", "NONE", "NONE", "underline")
+Hi("LspHintHighlight", "NONE", "NONE", "underline")
+
+# Virtual Text
+Hi("LspErrorVirtualText", light_red, "NONE")
+Hi("LspWarningVirtualText", orange, "NONE")
+Hi("LspInformationVirtualText", light_grey, "NONE")
+Hi("LspHintVirtualText", light_grey, "NONE")

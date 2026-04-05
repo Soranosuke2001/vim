@@ -1,8 +1,5 @@
 vim9script
 
-# Load init folder
-runtime! init/*.vim
-
 # Plugins
 g:plug_home = expand('~/.vim/plugged')
 plug#begin(g:plug_home)

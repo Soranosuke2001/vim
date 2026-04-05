@@ -1,7 +1,5 @@
 vim9script
 
-
-
 # Strict Diagnostics (Virtual Text Only)
 g:lsp_diagnostics_enabled = 1
 g:lsp_diagnostics_virtual_text_enabled = 1

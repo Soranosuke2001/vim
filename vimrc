@@ -9,8 +9,10 @@ plug#begin(g:plug_home)
   Plug 'prabirshrestha/asyncomplete-lsp.vim'
 plug#end()
 
-# Set colorscheme
-colorscheme ptheme
+# Load configs
+var current_dir = expand('<sfile>:p:h')
+execute 'source ' .. current_dir .. '/colors/palette.vim'
+execute 'source ' .. current_dir .. '/colors/general.vim'
 
 # Enable true color
 set termguicolors
